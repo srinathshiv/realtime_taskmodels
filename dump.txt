@@ -1,0 +1,725 @@
+execve("/usr/bin/taskset", ["taskset", "-c", "1", "./proj-1.o", "/home/ninja07/input.txt"], [/* 17 vars */]) = 0
+brk(NULL)                               = 0x75c000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=116745, ...}) = 0
+mmap(NULL, 116745, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8ca9a78000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8ca9a77000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8ca94a6000
+mprotect(0x7f8ca9666000, 2097152, PROT_NONE) = 0
+mmap(0x7f8ca9866000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f8ca9866000
+mmap(0x7f8ca986c000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8ca986c000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8ca9a76000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8ca9a75000
+arch_prctl(ARCH_SET_FS, 0x7f8ca9a76700) = 0
+mprotect(0x7f8ca9866000, 16384, PROT_READ) = 0
+mprotect(0x606000, 4096, PROT_READ)     = 0
+mprotect(0x7f8ca9a95000, 4096, PROT_READ) = 0
+munmap(0x7f8ca9a78000, 116745)          = 0
+brk(NULL)                               = 0x75c000
+brk(0x77d000)                           = 0x77d000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8ca91ce000
+close(3)                                = 0
+sched_getaffinity(0, 256, [f, 0, 0, 0, 0, 0, 0, 0]) = 8
+sched_setaffinity(0, 8, [2, 0, 0, 1fdd1, 0, 0, 0, 0]) = 0
+execve("./proj-1.o", ["./proj-1.o", "/home/ninja07/input.txt"], [/* 17 vars */]) = 0
+brk(NULL)                               = 0x7d1000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=116745, ...}) = 0
+mmap(NULL, 116745, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f61b9680000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0!\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=31712, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f61b967f000
+mmap(NULL, 2128832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61b9270000
+mprotect(0x7f61b9277000, 2093056, PROT_NONE) = 0
+mmap(0x7f61b9476000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f61b9476000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61b9053000
+mprotect(0x7f61b906b000, 2093056, PROT_NONE) = 0
+mmap(0x7f61b926a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f61b926a000
+mmap(0x7f61b926c000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f61b926c000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61b8c89000
+mprotect(0x7f61b8e49000, 2097152, PROT_NONE) = 0
+mmap(0x7f61b9049000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f61b9049000
+mmap(0x7f61b904f000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f61b904f000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f61b967e000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f61b967d000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f61b967c000
+arch_prctl(ARCH_SET_FS, 0x7f61b967d700) = 0
+mprotect(0x7f61b9049000, 16384, PROT_READ) = 0
+mprotect(0x7f61b926a000, 4096, PROT_READ) = 0
+mprotect(0x7f61b9476000, 4096, PROT_READ) = 0
+mprotect(0x602000, 4096, PROT_READ)     = 0
+mprotect(0x7f61b969d000, 4096, PROT_READ) = 0
+munmap(0x7f61b9680000, 116745)          = 0
+set_tid_address(0x7f61b967d9d0)         = 27895
+set_robust_list(0x7f61b967d9e0, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7f61b9058b50, [], SA_RESTORER|SA_SIGINFO, 0x7f61b9064390}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7f61b9058be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f61b9064390}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x7d1000
+brk(0x7f2000)                           = 0x7f2000
+open("/home/ninja07/input.txt", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=145, ...}) = 0
+read(3, "3 5000\nP 30 100 200 L3 1000 U3\nP"..., 4096) = 145
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f61b8488000
+mprotect(0x7f61b8488000, 4096, PROT_NONE) = 0
+clone(strace: Process 27896 attached
+child_stack=0x7f61b8c87ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f61b8c889d0, tls=0x7f61b8c88700, child_tidptr=0x7f61b8c889d0) = 27896
+[pid 27896] set_robust_list(0x7f61b8c889e0, 24 <unfinished ...>
+[pid 27895] sched_setscheduler(27896, SCHED_FIFO, [30] <unfinished ...>
+[pid 27896] <... set_robust_list resumed> ) = 0
+[pid 27895] <... sched_setscheduler resumed> ) = 0
+[pid 27896] futex(0x6032e4, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 27895] mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f61b7c87000
+[pid 27895] mprotect(0x7f61b7c87000, 4096, PROT_NONE) = 0
+[pid 27895] clone(strace: Process 27897 attached
+child_stack=0x7f61b8486ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f61b84879d0, tls=0x7f61b8487700, child_tidptr=0x7f61b84879d0) = 27897
+[pid 27897] set_robust_list(0x7f61b84879e0, 24 <unfinished ...>
+[pid 27895] sched_setscheduler(27897, SCHED_FIFO, [20] <unfinished ...>
+[pid 27897] <... set_robust_list resumed> ) = 0
+[pid 27895] <... sched_setscheduler resumed> ) = 0
+[pid 27897] futex(0x6032e4, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 27895] mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f61b7486000
+[pid 27895] mprotect(0x7f61b7486000, 4096, PROT_NONE) = 0
+[pid 27895] clone(strace: Process 27898 attached
+child_stack=0x7f61b7c85ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f61b7c869d0, tls=0x7f61b7c86700, child_tidptr=0x7f61b7c869d0) = 27898
+[pid 27898] set_robust_list(0x7f61b7c869e0, 24 <unfinished ...>
+[pid 27895] sched_setscheduler(27898, SCHED_FIFO, [10] <unfinished ...>
+[pid 27898] <... set_robust_list resumed> ) = 0
+[pid 27895] <... sched_setscheduler resumed> ) = 0
+[pid 27898] futex(0x6032e4, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 27895] mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f61b6c85000
+[pid 27895] mprotect(0x7f61b6c85000, 4096, PROT_NONE) = 0
+[pid 27895] clone(strace: Process 27899 attached
+child_stack=0x7f61b7484ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f61b74859d0, tls=0x7f61b7485700, child_tidptr=0x7f61b74859d0) = 27899
+[pid 27899] set_robust_list(0x7f61b74859e0, 24 <unfinished ...>
+[pid 27895] futex(0x6032e4, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+[pid 27899] <... set_robust_list resumed> ) = 0
+[pid 27899] open("/dev/input/event3", O_RDONLY) = 4
+[pid 27899] futex(0x6032e4, FUTEX_WAKE_PRIVATE, 2147483647) = 4
+[pid 27895] <... futex resumed> )       = 0
+[pid 27899] read(4,  <unfinished ...>
+[pid 27895] nanosleep({5, 0},  <unfinished ...>
+[pid 27898] <... futex resumed> )       = 0
+[pid 27897] <... futex resumed> )       = 0
+[pid 27896] <... futex resumed> )       = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27897] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 623895287},  <unfinished ...>
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {1, 1522700005},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = -1 EINVAL (Invalid argument)
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 623601860},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 529781513},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99552049},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99297111},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99599988},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99326005},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99563355},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99322994},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99562638},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99329567},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99971504},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 524667848},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99983877},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99552676},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99286040},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99519156},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99220452},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99539434},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99332910},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99527686},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99129614},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99468194},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99267684},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99956048},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 525161004},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99983971},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99552319},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99336705},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99531050},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99294765},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99557753},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99296112},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99510819},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99218878},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99552005},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99306550},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99957932},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 525611037},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99983532},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99559726},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99347458},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99599281},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99345779},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99597911},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99312746},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99560173},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99261954},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99534507},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99311522},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99945868},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 525906584},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99983885},  <unfinished ...>
+[pid 27895] <... nanosleep resumed> 0x7ffc5e363870) = 0
+[pid 27895] clock_nanosleep(CLOCK_REALTIME, 0, {5, 705032704},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99555594},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99358221},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99548374},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99279312},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99523796},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99274306},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99786719},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99693839},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99547464},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99311707},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99971004},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 525537763},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99983922},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99560692},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99317555},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99554969},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99231039},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99549215},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99263628},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99555835},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99291025},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99578794},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99343104},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99970867},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 525434739},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99983710},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99569965},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99340991},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99589430},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99339628},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99555789},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99307325},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99590926},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99306839},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99581313},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99315575},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99958111},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 494289053},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99983845},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99547547},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99302261},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99552521},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99307805},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99552079},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99307706},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99581825},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99339389},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99958114},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 525681365},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99983751},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99564320},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99344495},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99543610},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99240255},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99576229},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99323824},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99968306},  <unfinished ...>
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99994085},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99578998},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99261230},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27896] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99957992},  <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 523349431},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99996697},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99583828},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99313607},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99995827},  <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99976386}, NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99511814},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99318404},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99474752},  <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99259114},  <unfinished ...>
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27898] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27896] <... futex resumed> )       = -1 EAGAIN (Resource temporarily unavailable)
+[pid 27898] <... futex resumed> )       = 0
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99564867},  <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99272329},  <unfinished ...>
+[pid 27897] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] <... clock_nanosleep resumed> NULL) = 0
+[pid 27896] futex(0x6031b8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 27895] <... clock_nanosleep resumed> NULL) = 0
+[pid 27898] <... clock_nanosleep resumed> NULL) = 0
+[pid 27897] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1) = 1
+[pid 27898] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99959367},  <unfinished ...>
+[pid 27895] kill(3074971392, SIGTERM <unfinished ...>
+[pid 27897] clock_nanosleep(CLOCK_REALTIME, 0, {0, 525557177},  <unfinished ...>
+[pid 27895] <... kill resumed> )        = -1 ESRCH (No such process)
+[pid 27896] <... futex resumed> )       = 0
+[pid 27895] kill(3100149504, SIGTERM <unfinished ...>
+[pid 27896] futex(0x6031b8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 27895] <... kill resumed> )        = -1 ESRCH (No such process)
+[pid 27895] kill(3091756800, SIGTERM <unfinished ...>
+[pid 27896] <... futex resumed> )       = 0
+[pid 27896] clock_nanosleep(CLOCK_REALTIME, 0, {0, 99996482},  <unfinished ...>
+[pid 27895] <... kill resumed> )        = -1 ESRCH (No such process)
+[pid 27895] kill(3083364096, SIGTERM)   = -1 ESRCH (No such process)
+[pid 27895] exit_group(0)               = ?
+[pid 27897] +++ exited with 0 +++
+[pid 27898] +++ exited with 0 +++
+[pid 27896] +++ exited with 0 +++
+[pid 27899] +++ exited with 0 +++
++++ exited with 0 +++
